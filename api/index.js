@@ -1,10 +1,10 @@
 require("dotenv").config();
-require("./database/index");
+require("../database/index");
 const express = require("express");
 const path = require("path");
 const morgan = require("morgan");
 const cors = require("cors");
-const router = require("./routes/index");
+const router = require("../routes/index");
 const app = express();
 
 app.use(cors());
